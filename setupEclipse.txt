@@ -1,2 +1,4 @@
 - M2_REPO variable
 - Preferences (alt+shift+p)
+- Favorites (Fest aassert)
+- Launch config

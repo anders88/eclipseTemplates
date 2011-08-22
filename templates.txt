@@ -1,0 +1,30 @@
+Create Template:
+
+private String ${varname};
+
+public static ${enclosing_type} create(String ${varname:field}) {
+    ${enclosing_type} ${local:newName(enclosing_type)} = new ${enclosing_type}();
+    ${local}.${varname} = ${varname};
+	return ${local};
+}
+
+Test Template:
+@${testType:newType(org.junit.Test)}
+public void ${testname}() throws Exception {
+	${staticImport:importStatic('org.junit.Assert.*')}${cursor} 
+}
+
+Thank you:
+/*
+ *                                                                              
+######## ##     ##    ###    ##    ## ##    ##    ##    ##  #######  ##     ## 
+   ##    ##     ##   ## ##   ###   ## ##   ##      ##  ##  ##     ## ##     ## 
+   ##    ##     ##  ##   ##  ####  ## ##  ##        ####   ##     ## ##     ## 
+   ##    ######### ##     ## ## ## ## #####          ##    ##     ## ##     ## 
+   ##    ##     ## ######### ##  #### ##  ##         ##    ##     ## ##     ## 
+   ##    ##     ## ##     ## ##   ### ##   ##        ##    ##     ## ##     ## 
+   ##    ##     ## ##     ## ##    ## ##    ##       ##     #######   #######        
+    
+    Anders.Karlsen@steria.no
+    @anderskar
+ */

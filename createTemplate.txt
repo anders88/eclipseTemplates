@@ -1,7 +1,0 @@
-private String ${varname};
-
-public static ${enclosing_type} create(String ${varname:field}) {
-    ${enclosing_type} ${local:newName(enclosing_type)} = new ${enclosing_type}();
-    ${local}.${varname} = ${varname};
-	return ${local};
-}

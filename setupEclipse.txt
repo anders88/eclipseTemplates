@@ -2,3 +2,4 @@
 - Preferences (alt+shift+p)
 - Favorites (Fest aassert)
 - Launch config
+- Next editor

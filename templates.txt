@@ -14,6 +14,11 @@ public void ${testname}() throws Exception {
 	${staticImport:importStatic('org.junit.Assert.*')}${cursor} 
 }
 
+nullsafe:
+private static <T> boolean nullSafeEquals(T a, T b) {
+	return (a != null) ? a.equals(b) : b != null;
+}
+
 Thank you:
 /*
  *                                                                              

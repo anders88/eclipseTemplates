@@ -1,7 +1,7 @@
-#Mon Sep 05 18:18:58 CEST 2011
+#Mon Sep 05 20:29:12 CEST 2011
 /instance/org.eclipse.wst.server.core/module-start-timeout=300000
 @org.eclipse.debug.ui=3.5.1.v20090811_r351
-/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="nullSafeEquals">private static &lt;T&gt; boolean nullSafeEquals(T a, T b) {\n\treturn (a \!\= null) ? a.equals(b) \: b \!\= null;\n}</template><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="Create">private String ${varname};\n\npublic static ${enclosing_type} create(String ${varname\:field}) {\n    ${enclosing_type} ${local\:newName(enclosing_type)} \= new ${enclosing_type}();\n    ${local}.${varname} \= ${varname};\n\treturn ${local};\n}</template><template autoinsert\="false" context\="java" deleted\="false" description\="" enabled\="true" name\="NameEquals">${staticImport\:importStatic('org.fest.assertions.Assertions.assertThat')}assertThat(Person.create("Darth")) //\n\t\t\t.isEqualTo(Person.create("Darth")) //\n\t\t\t.isNotEqualTo(Person.create("Anakin")) //\n\t\t\t.isNotEqualTo(Person.create(null)) //\n\t\t\t.isEqualTo(Person.create(null)) //\n\t\t\t.isNotEqualTo(null)\n\t\t;\n\t\t\n\t\tassertThat(Person.create(null)) //\n\t\t\t.isNotEqualTo(Person.create("Darth")) //\n\t\t\t.isEqualTo(Person.create(null)) //\n\t\t;</template><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="ThankYou">/*\n *                                                                           \n *  \#\#\#\#\#\#\#\# \#\#     \#\#    \#\#\#    \#\#    \#\# \#\#    \#\#    \#\#    \#\#  \#\#\#\#\#\#\#  \#\#     \#\# \n *     \#\#    \#\#     \#\#   \#\# \#\#   \#\#\#   \#\# \#\#   \#\#      \#\#  \#\#  \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\#  \#\#   \#\#  \#\#\#\#  \#\# \#\#  \#\#        \#\#\#\#   \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#\#\#\#\#\#\#\# \#\#     \#\# \#\# \#\# \#\# \#\#\#\#\#          \#\#    \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\# \#\#\#\#\#\#\#\#\# \#\#  \#\#\#\# \#\#  \#\#         \#\#    \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\# \#\#     \#\# \#\#   \#\#\# \#\#   \#\#        \#\#    \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\# \#\#     \#\# \#\#    \#\# \#\#    \#\#       \#\#     \#\#\#\#\#\#\#   \#\#\#\#\#\#\#        \n *   \n *   Anders.Karlsen@steria.no\n *   @anderskar\n *   http\://www.sterkblanding.no\n */\n</template></templates>
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="java-members" deleted\="false" description\="test method (JUnit 4)" enabled\="true" id\="org.eclipse.jdt.ui.templates.test_junit4" name\="Test">@${testType\:newType(org.junit.Test)}\npublic void ${testname}() throws Exception {\n\t${cursor} \n}</template><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="nullSafeEquals">private static &lt;T&gt; boolean nullSafeEquals(T a, T b) {\n\treturn (a \!\= null) ? a.equals(b) \: b \=\= null;\n}</template><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="Create">private String ${varname};\n\npublic static ${enclosing_type} create(String ${varname\:field}) {\n    ${enclosing_type} ${local\:newName(enclosing_type)} \= new ${enclosing_type}();\n    ${local}.${varname} \= ${varname};\n\treturn ${local};\n}</template><template autoinsert\="false" context\="java" deleted\="false" description\="" enabled\="true" name\="NameEquals">${staticImport\:importStatic('org.fest.assertions.Assertions.assertThat')}assertThat(Person.create("Darth")) //\n\t\t\t.isEqualTo(Person.create("Darth")) //\n\t\t\t.isNotEqualTo(Person.create("Anakin")) //\n\t\t\t.isNotEqualTo(Person.create(null)) //\n\t\t\t.isNotEqualTo(null)\n\t\t;\n\t\t\n\t\tassertThat(Person.create(null)) //\n\t\t\t.isNotEqualTo(Person.create("Darth")) //\n\t\t\t.isEqualTo(Person.create(null)) //\n\t\t;</template><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="ThankYou">/*\n *                                                                           \n *  \#\#\#\#\#\#\#\# \#\#     \#\#    \#\#\#    \#\#    \#\# \#\#    \#\#    \#\#    \#\#  \#\#\#\#\#\#\#  \#\#     \#\# \n *     \#\#    \#\#     \#\#   \#\# \#\#   \#\#\#   \#\# \#\#   \#\#      \#\#  \#\#  \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\#  \#\#   \#\#  \#\#\#\#  \#\# \#\#  \#\#        \#\#\#\#   \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#\#\#\#\#\#\#\# \#\#     \#\# \#\# \#\# \#\# \#\#\#\#\#          \#\#    \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\# \#\#\#\#\#\#\#\#\# \#\#  \#\#\#\# \#\#  \#\#         \#\#    \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\# \#\#     \#\# \#\#   \#\#\# \#\#   \#\#        \#\#    \#\#     \#\# \#\#     \#\# \n *     \#\#    \#\#     \#\# \#\#     \#\# \#\#    \#\# \#\#    \#\#       \#\#     \#\#\#\#\#\#\#   \#\#\#\#\#\#\#        \n *   \n *   Anders.Karlsen@steria.no\n *   @anderskar\n *   http\://www.sterkblanding.no\n */\n</template><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="Equals">@Override\n\tpublic boolean equals(Object obj) {\n\t\tif (\!(obj instanceof ${enclosing_type})) {\n\t\t\treturn false;\n\t\t}\n\t\t${enclosing_type} other \= (${enclosing_type}) obj;\n\t\treturn false;\n\t}\n\t\n\tprivate static &lt;T&gt; boolean nullSafeEquals(T a, T b) {\n\t\treturn (a \!\= null) ? a.equals(b) \: b \!\= null;\n\t}\n\t\n\t@Override\n\tpublic int hashCode() {\n\t\treturn 1;\n\t}</template></templates>
 /instance/org.eclipse.mylyn.java.ui/org.eclipse.mylyn.java.ui.run.count.3_1_0=1
 @org.eclipse.ui.ide=3.5.1.M20090826-0800
 /instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="" defaultVMConnector\=""/>\n
@@ -9,6 +9,7 @@
 /instance/org.eclipse.wst.ws.service.policy/org.eclipse.wst.ws.service.policy.ui.servicepols.wsiprofilecomp.wsiap.defaultProtocol=http\://schemas.xmlsoap.org/wsdl/soap/
 @org.eclipse.pde.core=3.5.101.v20100104
 /instance/com.google.gwt.eclipse.core/sdkSetXml=PHNka3MgZGVmYXVsdFNkaz0iR1dUIj4KCTxzZGsgbmFtZT0iR1dUIiBsb2NhdGlvbj0iL0FwcGxpY2F0aW9ucy9lY2xpcHNlL3BsdWdpbnMvY29tLmdvb2dsZS5nd3QuZWNsaXBzZS5zZGtidW5kbGUubWFjb3N4XzEuNy4xLnYyMDA5MDkyMjE3MzEvZ3d0LW1hYy0xLjcuMS8iIHZlcnNpb249IjEuNy4xIi8+Cjwvc2Rrcz4K
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.code_templates_migrated=true
 /instance/org.eclipse.ui.ide/PROBLEMS_FILTERS_MIGRATE=true
 /instance/org.eclipse.ui.editors/overviewRuler_migration=migrated_3.1
 /instance/org.eclipse.jdt.ui/content_assist_disabled_computers=org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
@@ -24,8 +25,8 @@
 /configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=5
 @org.eclipse.ui.workbench=3.5.1.M20090826-0800a
 file_export_version=3.0
-@org.eclipse.jdt.launching=3.5.1.v20100108_r352
 /instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.editor.tab.width=
+@org.eclipse.jdt.launching=3.5.1.v20100108_r352
 /configuration/com.google.gdt.eclipse.suite/lastAckUpdateNotification_com.google.appengine.eclipse.sdkbundle.e35.feature=1.2.6
 /configuration/com.google.gdt.eclipse.suite/id=1254607053958
 /instance/org.eclipse.wst.ws.service.policy/org.eclipse.wst.ws.service.policy.ui.servicepols.wsiprofilecomp.wsissbp.defaultProtocol=http\://schemas.xmlsoap.org/wsdl/soap/
@@ -65,13 +66,16 @@ file_export_version=3.0
 /instance/org.eclipse.mylyn.context.core/mylyn.attention.migrated=true
 /instance/org.eclipse.jdt.ui/useQuickDiffPrefPage=true
 @org.eclipse.mylyn.context.core=3.4.0.v20100608-0100-e3x
+/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch=false
 /instance/org.eclipse.jdt.ui/org.eclipse.jdt.internal.ui.navigator.layout=2
 /instance/org.eclipse.wst.jsdt.ui/fontPropagated=true
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.editor.tab.width=
 /instance/org.eclipse.ui.ide/tipsAndTricks=true
+@org.eclipse.jdt.debug.ui=3.4.1.v20090811_r351
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
 @org.eclipse.epp.usagedata.recording=1.1.0.R200906100410
 /instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.javadoclocations.migrated=true
+/instance/org.eclipse.jdt.debug.ui/org.eclipse.jdt.debug.ui.detail_formatters=groovy.lang.Reference,get(),1
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.internal.ui.navigator.layout=1
 @org.eclipse.team.ui=3.5.0.I20090430-0408
 /instance/org.eclipse.jdt.ui/content_assist_proposals_background=255,255,255
@@ -84,6 +88,7 @@ file_export_version=3.0
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
 /configuration/com.google.gdt.eclipse.suite/lastUpdate=1280867566176
+/instance/org.eclipse.jdt.debug.ui/org.eclipse.jdt.debug.ui.prompt_unable_to_install_breakpoint=false
 /instance/org.eclipse.debug.ui/preferredTargets=default\:default|
 /instance/org.eclipse.jdt.ui/fontPropagated=true
 /instance/com.google.gdt.eclipse.suite/addedNewWizardActionsorg.eclipse.jdt.ui.JavaPerspective=true
@@ -93,4 +98,5 @@ file_export_version=3.0
 @com.google.appengine.eclipse.core=1.1.2.v200910131704
 /instance/org.eclipse.jdt.ui/spelling_locale_initialized=true
 @org.eclipse.ui=3.5.1.M20090902-1000
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 /configuration/org.eclipse.ui.ide/SHOW_WORKSPACE_SELECTION_DIALOG=true

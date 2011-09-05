@@ -1,5 +1,5 @@
 - M2_REPO variable
 - Preferences (alt+shift+p)
-- Favorites (Fest aassert)
+- Favorites (Fest assert)
 - Launch config
 - Next editor

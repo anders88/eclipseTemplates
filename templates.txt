@@ -4,3 +4,57 @@ Test Template:
 public void ${testname}() throws Exception {
 	${staticImport:importStatic('org.junit.Assert.*')}${cursor} 
 }
+
+Create Template:
+
+private String ${varname};
+
+public static ${enclosing_type} create(String ${varname:field}) {
+    ${enclosing_type} ${local:newName(enclosing_type)} = new ${enclosing_type}();
+    ${local}.${varname} = ${varname};
+	return ${local};
+}
+
+Test Template:
+@${testType:newType(org.junit.Test)}
+public void ${testname}() throws Exception {
+	${staticImport:importStatic('org.junit.Assert.*')}${cursor} 
+}
+
+nullsafe:
+private static <T> boolean nullSafeEquals(T a, T b) {
+	return (a != null) ? a.equals(b) : b != null;
+}
+
+
+
+Thank you:
+/*
+ *                                                                           
+ *  ######## ##     ##    ###    ##    ## ##    ##    ##    ##  #######  ##     ## 
+ *     ##    ##     ##   ## ##   ###   ## ##   ##      ##  ##  ##     ## ##     ## 
+ *     ##    ##     ##  ##   ##  ####  ## ##  ##        ####   ##     ## ##     ## 
+ *     ##    ######### ##     ## ## ## ## #####          ##    ##     ## ##     ## 
+ *     ##    ##     ## ######### ##  #### ##  ##         ##    ##     ## ##     ## 
+ *     ##    ##     ## ##     ## ##   ### ##   ##        ##    ##     ## ##     ## 
+ *     ##    ##     ## ##     ## ##    ## ##    ##       ##     #######   #######        
+ *   
+ *   Anders.Karlsen@steria.no
+ *   @anderskar
+ *   http://www.sterkblanding.no
+ */
+
+
+NameEqual
+${staticImport:importStatic('org.fest.assertions.Assertions.assertThat')}assertThat(Person.create("Darth")) //
+			.isEqualTo(Person.create("Darth")) //
+			.isNotEqualTo(Person.create("Anakin")) //
+			.isNotEqualTo(Person.create(null)) //
+			.isEqualTo(Person.create(null)) //
+			.isNotEqualTo(null)
+		;
+
+		assertThat(Person.create(null)) //
+			.isNotEqualTo(Person.create("Darth")) //
+			.isEqualTo(Person.create(null)) //
+		;
